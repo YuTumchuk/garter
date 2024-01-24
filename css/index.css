@@ -1,0 +1,52 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;300&display=swap'); 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  :root {
+    --background-color: rgb(6, 6, 6);
+    --text-color: rgb(255,255,255);
+    --font-family: "EB garamont", sans-serif;
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    background-color: var(--background-color);
+  }
+  h1, a {
+    color: var(--text-color);
+  }
+  .menue__main{
+    color: var(--text-color);
+  }
+  .big__statements{
+    color: var(--text-color);
+  }
+  .ortinary__text{
+    color: var(--text-color);
+  }
+  .category__titles{
+    color: var(--text-color);
+  }
+  .qotation__text{
+    color: var(--text-color);
+  }
+  .button__text{
+    color: var(--text-color);
+  }
+  .hero-page{
+    display: inline;
+    align-items: center;
+  }
+  .main-image{
+    width:100%;
+    padding 5px;
+  }
+  @media (min-width: 1024px){
+    .main-image{
+        width: 1000px;
+    }
+  }

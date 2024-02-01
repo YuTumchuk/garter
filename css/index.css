@@ -8,11 +8,38 @@
   
   :root {
     --background-color: rgb(6, 6, 6);
-    --text-color: rgb(255,255,255);
+    --text-color: rgb(188,188,183);
+    --border-color:
     --font-family: "EB garamont", sans-serif;
     scroll-behavior: smooth;
   }
-  
+  .container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 24px;
+  }
+  .upper-tier{
+    padding: 20px 15px 20px 15px;
+    border-bottom: 0.5px solid var(--text-color);
+  }
+  .lower-tier{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 2px 30px 2px;
+  }
+  .brand{
+    flex: 2;
+  }
+  .menue_labels{
+    display:flex;
+    justify-content: space-around;
+    flex:1;
+  }
+  .main-image{
+    width: 100%;
+    padding: 50px 0px 50px 0px;
+  }
   body {
     background-color: var(--background-color);
   }
@@ -21,6 +48,7 @@
   }
   .menue__main{
     color: var(--text-color);
+    font-size: 18px;
   }
   .big__statements{
     color: var(--text-color);
@@ -37,16 +65,7 @@
   .button__text{
     color: var(--text-color);
   }
-  .hero-page{
-    display: inline;
-    align-items: center;
-  }
-  .main-image{
-    width:100%;
-    padding 5px;
-  }
-  @media (min-width: 1024px){
+
+  @media (min-width: 320px){
     .main-image{
-        width: 1000px;
-    }
   }

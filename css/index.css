@@ -7,11 +7,55 @@
   }
   
   :root {
-    --background-color: rgb(6, 6, 6);
-    --text-color: rgb(188,188,183);
+    --background-color: rgb(255, 255, 255);
+    --text-white-color: rgb(255, 255, 255);
+    --text-black-color:rgb(56, 56, 56);
+    --hyphen-color:rgb(194, 161, 138);
+    --text-ordinary-color: rgb(116,116,116);
     --border-color:
     --font-family: "EB garamont", sans-serif;
     scroll-behavior: smooth;
+  }
+  .promo-partial {
+  background: url("/img/cover.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  }
+  .brand{
+    flex:2;
+  }
+  .menue_labels{
+    display:flex;
+    justify-content: space-around;
+    flex:1;
+  }
+  .menue__main{
+    color: var(--text-white-color);
+    font-size: 18px;
+  }
+  .banner{
+    display:flex;
+  }
+  .banner__content{
+    width:1500px;
+    padding:180px 0px 225px 0px;
+    display:flex;
+    justify-content: center;
+  }  
+  .banner__part-busy{
+    width: 570px;
+    height: 406px;
+    background-color:var(--background-color);
+    margin: 0px 15px 0px 15px; 
+    padding: 45px 45px 45px 45px;   
+  }
+  .banner__part-empty{
+    width: 570px;
+    height: 406px;
+    margin: 0px 15px 0px 15px;
+  }
+  .buttons__container{
+    display: flex;
   }
   .container {
     max-width: 1200px;
@@ -28,33 +72,23 @@
     align-items: center;
     padding: 30px 2px 30px 2px;
   }
-  .brand{
-    flex: 2;
-  }
-  .menue_labels{
-    display:flex;
-    justify-content: space-around;
-    flex:1;
-  }
-  .main-image{
-    width: 100%;
-    padding: 50px 0px 50px 0px;
-  }
   body {
     background-color: var(--background-color);
   }
   h1, a {
     color: var(--text-color);
   }
-  .menue__main{
-    color: var(--text-color);
-    font-size: 18px;
-  }
   .big__statements{
     color: var(--text-color);
+    font-size: 60px;
+  }
+  .hyphen{
+    font-size: 90px;
+    color: var(--hyphen-color);
   }
   .ortinary__text{
-    color: var(--text-color);
+    color: var(--text-ordinary-color);
+    font-size: 19px;
   }
   .category__titles{
     color: var(--text-color);
@@ -62,10 +96,18 @@
   .qotation__text{
     color: var(--text-color);
   }
-  .button__text{
-    color: var(--text-color);
+  .button_shop{
+    color: var(--text-black-color);
+    border: 3px solid;
+    margin: 15px 15px 15px 0px;
   }
 
+  .button__ordinary{
+    color: var(--text-black-color);
+    border: 3px solid;
+   
+  }
   @media (min-width: 320px){
     .main-image{
   }
+}
